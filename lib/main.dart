@@ -1,6 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:is_spam/widgets/mini/auther_media.dart';
 import 'package:is_spam/widgets/mini/recomte_configure.dart';
 import 'package:provider/provider.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -95,7 +96,7 @@ class _HomeScreenState extends State<HomeScreen>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // drawer: autherMedia == true ? const AutherMedia() : null,
+      drawer: autherMedia == true ? const AutherMedia() : null,
       appBar: AppBar(
         backgroundColor: Colors.white,
         elevation: 0,
